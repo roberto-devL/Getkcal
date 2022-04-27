@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  background: #0d0d0d;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 34.375rem;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  height: 9.375rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: inline-flex;
+
+  background: linear-gradient(to right, #135058, #f1f2b5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 0.313rem;
+}
+
+.form-group input,
+.form-group select {
+  background: #1a1a1a;
+
+  width: 100%;
+  height: 2.813rem;
+
+  border: 0.1rem solid transparent;
+  border-radius: 0.313rem;
+
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  color: #fff;
+  padding: 0 0.938rem;
+
+  outline: none;
+  transition: border-color 0.2s ease-in;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #135058;
+}
+
+.form-group button {
+  background: linear-gradient(to right, #135058, #f1f2b5);
+
+  border-radius: 0.313rem;
+  border: 0;
+
+  height: 2.813rem;
+  color: #faebd7;
+
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.form-group button:hover {
+  color: #f1f2b5;
+}
+
+.form-group:last-child {
+  margin-top: 2.5rem;
+}
+
+.result-container {
+  margin-top: 2.5rem;
+}
+
+h2 {
+  color: #f1f2b5;
+}
+
+.result-content {
+  background: #1a1a1a;
+  margin-top: 0.625rem;
+  padding: 0.938rem;
+  border-radius: 0.313rem;
+}
+
+.result-content ul {
+  list-style: none;
+}
+
+.result-content ul li {
+  font-size: 0.875rem;
+  font-weight: bold;
+
+  line-height: 1.875rem;
+}
+
+.result-content ul li strong {
+  color: #f1f2b5;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 20rem;
+    margin: 0 auto;
+  }
+
+  .result-content {
+    margin-bottom: 0.5rem;
+    background: #1a1a1a;
+    margin-top: 0.625rem;
+    padding: 0.938rem;
+    border-radius: 0.313rem;
+  }
+}
+.result-content ul li {
+  font-size: 0.8rem;
+  font-weight: bold;
+  width: 100%;
+  line-height: 1.875rem;
+}
